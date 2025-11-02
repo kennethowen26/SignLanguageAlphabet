@@ -40,6 +40,7 @@ for dir_ in os.listdir(DATASET):
 if len(data) > 0 and len(labels) > 0:
     with open('data.pickle', 'wb') as f:
         pickle.dump({'data': data, 'labels': labels}, f)
-    print("✅ data.pickle successfully created!")
+    print("data.pickle successfully created!")
 else:
-    print("⚠️ No hand data detected. Please check your dataset.")
+    break
+
